@@ -1,1 +1,1 @@
-print("gola mundo")tt
+print("gola mundo")
