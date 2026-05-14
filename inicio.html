@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Flores Alesli</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="inicio.css">
+
+    <!-- ICONOS -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+
+        <div class="logo">
+            <i class="fa-solid fa-seedling"></i>
+            <h1>Flores Alesli</h1>
+        </div>
+
+        <nav class="navbar">
+            <a href="#inicio">Inicio</a>
+            <a href="#catalogo">Catálogo</a>
+            <a href="#eventos">Eventos</a>
+            <a href="#reservas">Reservas</a>
+            <a href="#servicios">Servicios</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+
+        <button class="btn-header" id="openLogin">
+            Iniciar Sesión
+        </button>
+
+    </header>
+    <div class="login-modal" id="loginModal">
+
+        <div class="login-box">
+
+            <span class="close-modal" id="closeLogin">&times;</span>
+
+            <h2>Iniciar Sesión</h2>
+
+            <form id="loginForm">
+
+                <div class="login-input">
+                    <input type="text" id="usuario" required>
+                    <label>Usuario</label>
+                </div>
+
+                <div class="login-input">
+                    <input type="password" id="password" required>
+                    <label>Contraseña</label>
+                </div>
+
+                <button type="submit" class="btn-primary login-btn">
+                    Entrar
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+    <!-- HERO -->
+    <section class="hero" id="inicio">
+
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content">
+
+            <span>ARREGLOS FLORALES PREMIUM</span>
+
+            <h2>
+                Elegancia Natural
+                Para Cada Momento
+            </h2>
+
+            <p>
+                Plataforma web moderna para gestión de ventas,
+                reservas, eventos y catálogo floral online.
+            </p>
+
+            <div class="hero-buttons">
+                <button class="btn-primary">Explorar Catálogo</button>
+                <button class="btn-secondary">Reservar Evento</button>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- SERVICIOS -->
+    <section class="services" id="servicios">
+
+        <div class="section-title">
+            <span>NUESTROS SERVICIOS</span>
+            <h2>Soluciones para cada ocasión</h2>
+        </div>
+
+        <div class="services-container">
+
+            <div class="service-card">
+                <i class="fa-solid fa-gift"></i>
+                <h3>Regalos Especiales</h3>
+                <p>
+                    Arreglos personalizados para aniversarios,
+                    cumpleaños y fechas importantes.
+                </p>
+            </div>
+
+            <div class="service-card">
+                <i class="fa-solid fa-ring"></i>
+                <h3>Bodas y Eventos</h3>
+                <p>
+                    Decoraciones florales elegantes para eventos
+                    corporativos y celebraciones.
+                </p>
+            </div>
+
+            <div class="service-card">
+                <i class="fa-solid fa-truck"></i>
+                <h3>Entrega Rápida</h3>
+                <p>
+                    Sistema de pedidos online con atención rápida
+                    y organizada.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- CATÁLOGO -->
+    <section class="catalogo" id="catalogo">
+
+        <div class="section-title">
+            <span>CATÁLOGO</span>
+            <h2>Productos Destacados</h2>
+        </div>
+
+        <div class="productos-container">
+
+            <div class="producto-card">
+                <img src="https://images.unsplash.com/photo-1520763185298-1b434c919102?q=80&w=1200&auto=format&fit=crop" alt="flores">
+
+                <div class="producto-info">
+                    <h3>Ramo Premium</h3>
+                    <p>
+                        Elegante combinación floral para ocasiones especiales.
+                    </p>
+
+                    <div class="producto-footer">
+                        <span>Bs. 150</span>
+                        <button>Comprar</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="producto-card">
+                <img src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?q=80&w=1200&auto=format&fit=crop" alt="flores">
+
+                <div class="producto-info">
+                    <h3>Flores Románticas</h3>
+                    <p>
+                        Arreglo floral moderno ideal para aniversarios.
+                    </p>
+
+                    <div class="producto-footer">
+                        <span>Bs. 220</span>
+                        <button>Comprar</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="producto-card">
+                <img src="https://images.unsplash.com/photo-1468327768560-75b778cbb551?q=80&w=1200&auto=format&fit=crop" alt="flores">
+
+                <div class="producto-info">
+                    <h3>Decoración Floral</h3>
+                    <p>
+                        Diseños exclusivos para bodas y eventos.
+                    </p>
+
+                    <div class="producto-footer">
+                        <span>Bs. 450</span>
+                        <button>Comprar</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- EVENTOS -->
+    <section class="eventos" id="eventos">
+
+        <div class="eventos-content">
+
+            <div class="eventos-text">
+                <span>EVENTOS</span>
+                <h2>Organizamos momentos inolvidables</h2>
+
+                <p>
+                    El sistema permitirá gestionar reservas,
+                    calendario digital, pedidos especiales y
+                    administración de eventos.
+                </p>
+
+                <ul>
+                    <li>✔ Reservas online</li>
+                    <li>✔ Gestión de pedidos</li>
+                    <li>✔ Agenda digital</li>
+                    <li>✔ Reportes automáticos</li>
+                </ul>
+            </div>
+
+            <div class="eventos-image">
+                <img src="https://images.unsplash.com/photo-1519378058457-4c29a0a2efac?q=80&w=1200&auto=format&fit=crop" alt="eventos">
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- RESERVAS -->
+    <section class="reservas" id="reservas">
+
+        <div class="section-title">
+            <span>RESERVAS</span>
+            <h2>Agenda tu pedido</h2>
+        </div>
+
+        <form class="formulario">
+
+            <div class="input-group">
+                <input type="text" required>
+                <label>Nombre Completo</label>
+            </div>
+
+            <div class="input-group">
+                <input type="email" required>
+                <label>Correo Electrónico</label>
+            </div>
+
+            <div class="input-group">
+                <input type="date" required>
+            </div>
+
+            <div class="input-group">
+                <textarea required></textarea>
+                <label>Detalle del pedido</label>
+            </div>
+
+            <button type="submit" class="btn-primary">
+                Realizar Reserva
+            </button>
+
+        </form>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer" id="contacto">
+
+        <div class="footer-container">
+
+            <div class="footer-box">
+                <h3>Flores Alesli</h3>
+                <p>
+                    Sistema web moderno para ventas,
+                    reservas y gestión floral.
+                </p>
+            </div>
+
+            <div class="footer-box">
+                <h3>Contacto</h3>
+                <p>La Paz - Bolivia</p>
+                <p>+591 77777777</p>
+                <p>floresalesli@gmail.com</p>
+            </div>
+
+            <div class="footer-box">
+                <h3>Redes Sociales</h3>
+
+                <div class="social-icons">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-whatsapp"></i>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 Flores Alesli | Todos los derechos reservados</p>
+        </div>
+
+    </footer>
+
+    <script src="coso.js"></script>
+
+</body>
+</html>
