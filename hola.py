@@ -1,1 +1,0 @@
-print("gola mundo")tt
